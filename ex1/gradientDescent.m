@@ -16,8 +16,10 @@ for iter = 1:num_iters
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCost) and gradient here.
     %
-
-
+    predictions = X*theta;     	
+    for j = 1:length(theta)
+        derivates = (predictions-y) .* X(:,j);
+        theta(j) = theta(j) - alpha / m * sum(derivates);
 
 
 
