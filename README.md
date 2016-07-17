@@ -9,3 +9,7 @@ Octave/Matlab Tutorial - Control Statements: for, while, if statement
 ### ex1 
 
 Programming Assignment: Linear Regression
+
+### ex2
+
+Programming Assignment: Logistic Regression

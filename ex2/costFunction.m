@@ -19,8 +19,12 @@ grad = zeros(size(theta));
 %
 % Note: grad should have the same dimensions as theta
 %
-
-
+hx = sigmoid(X*theta);  % predictions of hypothesis on all m examples
+right = (-y .* log(hx)) - ((1 - y) .* log(1-hx));
+J = 1 / m * sum(right);
+for i = 1:size(theta)
+	derivates = (hx - y) .* X(:,i);
+	grad(i) = 1 / m * sum(derivates);
 
 
 
