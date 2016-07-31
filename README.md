@@ -17,3 +17,7 @@ Programming Assignment: Logistic Regression
 ### ex3
 
 Programming Assignment: Multi-class Classification and Neural Networks
+
+### ex4
+
+Programming Assignment: Neural Networks Learning
