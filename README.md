@@ -13,3 +13,7 @@ Programming Assignment: Linear Regression
 ### ex2
 
 Programming Assignment: Logistic Regression
+
+### ex3
+
+Programming Assignment: Multi-class Classification and Neural Networks
