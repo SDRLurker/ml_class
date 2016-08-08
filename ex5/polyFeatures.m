@@ -14,7 +14,13 @@ X_poly = zeros(numel(X), p);
 %               column of X contains the values of X to the p-th power.
 %
 % 
-
+% 3.1 Learning Polynomial Regression
+X_poly = X;
+for i = 2:p
+    xp = X(:,1);
+    xp = xp.^i;
+    X_poly = [X_poly xp];
+end 
 
 
 
