@@ -21,3 +21,11 @@ Programming Assignment: Multi-class Classification and Neural Networks
 ### ex4
 
 Programming Assignment: Neural Networks Learning
+
+### ex5
+
+Programming Assignment: Regularized Linear Regression and Bias/Variance
+
+### ex6
+
+Programming Assignment: Support Vector Machines
