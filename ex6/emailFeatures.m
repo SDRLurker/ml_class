@@ -47,7 +47,10 @@ x = zeros(n, 1);
 %              x = [ 0 0 0 0 1 0 0 0 ... 0 0 0 0 1 ... 0 0 0 1 0 ..];
 %
 %
-
+% 2.2 Extracting Features from Emails
+for i = 1 : length(word_indices)
+    x(word_indices(i)) = 1;
+end
 
 
 

@@ -15,7 +15,9 @@ sim = 0;
 %               sigma
 %
 %
-
+% 1.2 SVM with Gaussian Kernels
+% 1.2.1 Gaussian Kernel
+sim = exp(-sum((x1-x2).^2)/(2*(sigma^2)));
 
 
 
