@@ -19,7 +19,9 @@ S = zeros(n);
 % Note: When computing the covariance matrix, remember to divide by m (the
 %       number of examples).
 %
-
+% 2.2 Implementing PCA
+Sigma = (1 / m) * X' * X;
+[U, S, X] = svd(Sigma);
 
 
 

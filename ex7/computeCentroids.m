@@ -25,7 +25,21 @@ centroids = zeros(K, n);
 %
 % Note: You can use a for-loop over the centroids to compute this.
 %
+% 1.1 Implementing K-means
+% 1.1.2 Computing centroid means
+num_in_centroid = zeros(K);
 
+for i = 1:m
+    k = idx(i);
+    centroids(k,:) = centroids(k,:) + X(i,:);
+    num_in_centroid(k) = num_in_centroid(k) + 1; 
+end
+
+for k = 1:K
+    if num_in_centroid(k) > 0
+        centroids(k,:) = centroids(k,:) / num_in_centroid(k); 
+    end
+end
 
 
 

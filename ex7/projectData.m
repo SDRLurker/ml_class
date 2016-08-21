@@ -17,8 +17,14 @@ Z = zeros(size(X, 1), K);
 %                    x = X(i, :)';
 %                    projection_k = x' * U(:, k);
 %
-
-
+% 2.3 Dimensionality Reduction with PCA
+% 2.3.1 Projecting the data onto the principal components
+m = size(X,1);
+for i=1:m
+    for k=1:K
+        Z(i,k) = X(i,:) * U(:, k);
+    end
+end
 
 
 % =============================================================

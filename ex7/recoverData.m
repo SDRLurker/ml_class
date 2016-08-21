@@ -20,7 +20,14 @@ X_rec = zeros(size(Z, 1), size(U, 1));
 %
 %               Notice that U(j, 1:K) is a row vector.
 %               
-
+% 2.3 Dimensionality Reduction with PCA
+% 2.3.2 Reconstructing an approximation of the data
+m = size(Z,1);
+for i=1:m
+    for k=1:K
+        X_rec(i,:) = X_rec(i,:) + Z(i,k) * U(:, k)';
+    end
+end
 
 
 % =============================================================
