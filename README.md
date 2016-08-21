@@ -29,3 +29,7 @@ Programming Assignment: Regularized Linear Regression and Bias/Variance
 ### ex6
 
 Programming Assignment: Support Vector Machines
+
+### ex7
+
+Programming Assignment: K-Means Clustering and PCA
